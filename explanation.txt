@@ -1,0 +1,16 @@
+preprocessing - 
+1. dummy scans
+2. realignment for correction of movement artifacts
+3. coregisteration between the structural and functional data to maximise mutual infor (checkreg between reference as mean fn image and source image as structural image)
+4. segmentation of the structral image, create white and gray matter, bias-corrected str image, create deformation field contains 3 vlolumes to encode in x y z dirs. If the str and func data are aligned propoerly, this can be used to spatially normalise functional data.
+5. normalise spatially normalise files will be created with prefix w
+6. smoothing 
+
+model specification, review, estimation
+1. sepcify 1st level --> create design matrix, use of classical dir, design orthogonality
+2. USe review functionality --> A degree of non-orthogonality or collinearity is indicated by the gray shading.
+3. Estimate
+4. Inference
+5. COntrast manager
+6. plot responses at a voxel
+7. overlays - slices, sections, render
